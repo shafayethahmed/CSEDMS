@@ -4,88 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE Department Management System</title>
+
     <link rel="icon" href="logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-   
-        .container{
-            border: 2px solid #DB4904;
-            width: 38%;
-            justify-items: center;
-            align-content: center;
-             margin: auto;
-             margin-top: 50px;
-             border-radius: 10px;
-             background-color: white;
-             color: #040524;
+        body{
+            min-height: 100vh;
+            margin: 0;
+            background: 
+                linear-gradient(rgba(4,5,36,0.65), rgba(4,5,36,0.65)),
+                url("picnic.jpg") no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .image-icon{
-            border-radius: 5px;
-            border: 1px solid rgba(19, 19, 19, 0);
-            margin-top: 20px;
-            width: fit-content;
+
+        .login-container{
+            max-width: 420px;
+            margin: auto;
+            margin-top: 15px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            color: #040524;
         }
+
+        .image-icon img{
+            width: 80px;
+            margin-bottom: 12px;
+        }
+
+        h6{
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        #login-text{
+            font-size: 11px;
+            color: #d40000;
+            font-weight: 500;
+            margin-bottom: 18px;
+        }
+
         .btn-primary{
             background-color:#040524;
-            margin: 5px;
             border-color: #040524;
-            justify-content: left;
-            margin-left: 100px;
-            
-        }
-        #login-text{
-            margin-top: -10px;
-            font-size: 10px;
-            color: red;
+            width: 100%;
             font-weight: 500;
         }
-        #footer-txt{
-            text-align: center;
-            font-size: 10px;
-            color: #040524;
-            font-weight: 400;
+
+        .btn-primary:hover{
+            background-color:#020318;
         }
-        body{
-            background-image: url(BG-1.jpg);
-        }
-        .Form-Container{
-             justify-items: center;
-             align-content: center;
-             background-color: white;
-        }
+
         #linkpassword{
             text-align: left;
             font-size: 12px;
         }
+
+        footer{
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        #footer-txt{
+            font-size: 11px;
+            color: #ffffff;
+            opacity: 0.85;
+        }
     </style>
 </head>
+
 <body>
-     <div class="container">
-        <div class="Form-Container">
+
+    <div class="login-container">
+
         <div class="image-icon">
-             <img src="RTM-Logo.jpg" alt="" width="80px">
+            <img src="RTM-Logo.jpg" alt="RTM Logo">
         </div>
-            <h6>Department Of Computer Science & Engineering</h6>
-            <p><i>RTM Al-Kabir Technical University</i></p>
-             <p id="login-text">Please Provide Your Information for login to the system.</p>
-            <div id="formData">
-                  <form>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="mb-3" id="linkpassword">
-                        <a href="#">Forget Password?</a>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                     </div>
-                    </form>
+
+        <h6>Department Of Computer Science & Engineering</h6>
+        <p><i>RTM Al-Kabir Technical University</i></p>
+
+        <p id="login-text">Please provide your information to login.</p>
+
+        <form>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
             </div>
-         </div>
-     </div>
-     <footer>
-        <p id="footer-txt">Developed By Shafayeth Ahmed</p>
-     </footer>
+
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+
+            <div class="mb-3 d-flex justify-content-between align-items-center" id="linkpassword">
+                <a href="#" class="text-decoration-none">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <p id="footer-txt">Developed By Shafayeth Ahmed Chowdhury|CSE-2</p>
+    </footer>
+
 </body>
 </html>
