@@ -58,7 +58,7 @@
 
 .brand{
     font-weight:700;
-    font-size:18px;
+    font-size:14px;
     color:var(--primary);
 }
 
@@ -84,7 +84,7 @@
 
 /* SIDEBAR  */
 .sidebar{
-    width:200px;
+    width:190px;
     background:var(--sidebar);
     height:calc(100vh - 64px);
     position:fixed;
@@ -112,7 +112,7 @@
 .sidebar a,
 .dropdown-btn{
     width:100%;
-    padding:12px 22px;
+    padding:8px 10px;
     display:flex;
     align-items:center;
     gap:12px;
@@ -152,7 +152,7 @@
 }
 
 .dropdown-container a{
-    padding-left:56px;
+    padding-left:25px;
     font-size:12px;
 }
 
@@ -213,42 +213,45 @@
         <span><i class="fas fa-user-graduate"></i> Students</span>
         <i class="fas fa-chevron-down"></i>
     </button>
-    <div class="dropdown-container">
-        <a href="#">All Students</a>
-        <a href="#">Alumni / Ex-Students</a>
-    </div>
+        <div class="dropdown-container">
+            <a href="#"><i class="fas fa-users"></i> All Students</a>
+            <a href="#"><i class="fas fa-user-clock"></i> Alumni / Ex-Students</a>
+        </div>
+
 
     <a href="#"><i class="fas fa-chalkboard-teacher"></i> Faculty & Staff</a>
-
+    <a href="#"><i class="fas fa-bullhorn"></i> Notices</a>
     <button class="dropdown-btn">
         <span><i class="fas fa-book"></i> Courses</span>
         <i class="fas fa-chevron-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="#">Subjects</a>
-        <a href="#">Curriculum</a>
-        <a href="#">Assign Teacher</a>
+    <a href="#"><i class="fas fa-book-open"></i> Subjects</a>
+    <a href="#"><i class="fas fa-sitemap"></i> Curriculum</a>
+    <a href="#"><i class="fas fa-user-check"></i> Assign Teacher</a>
     </div>
+
 
     <button class="dropdown-btn">
         <span><i class="fas fa-layer-group"></i> Batches</span>
         <i class="fas fa-chevron-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="#">Assign Batch</a>
-        <a href="#">Batch Distribution</a>
+    <a href="#"><i class="fas fa-user-plus"></i> Assign Batch</a>
+    <a href="#"><i class="fas fa-random"></i> Batch Distribution</a>
     </div>
+
 
     <div class="menu-section">Administration</div>
     <a href="#"><i class="fas fa-users"></i> Users & Roles</a>
-    <a href="#"><i class="fas fa-bullhorn"></i> Notices</a>
     <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
 </div>
 
 <!--  MAIN  -->
 <div class="main" id="main">
     <h2>Dashboard</h2>
-    <p>CSE Department Management System</p>
+    <p>RTM-AKTU CSE Department Management System <small>-<i>Shifat</i></small>
+    </p>
 </div>
 
 <script>
